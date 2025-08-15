@@ -207,8 +207,8 @@ if (window.location.pathname.includes("blog.html")) {
 // djslkjflad
 // ===================== ALL BLOGS SECTION WITH ARROW NAVIGATION =====================
 if (
-  window.location.pathname.includes("index.html") ||
-  window.location.pathname === "/"
+  window.location.pathname.endsWith("/") ||
+  window.location.pathname.endsWith("/index.html")
 ) {
   let currentBlogIndex = 0; // Track which set of blogs we're showing
   let allBlogsData = []; // Store all blog data
