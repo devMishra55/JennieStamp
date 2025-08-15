@@ -20,8 +20,8 @@ window.addEventListener("scroll", () => {
 const params = new URLSearchParams(window.location.search);
 const blogId = params.get("id");
 
-if (!blogId && window.location.pathname.includes("index.html")) {
-  fetch("blogs.json")
+if (!blogId && window.location.pathname.includes("./index.html")) {
+  fetch("./blogs.json")
     .then((res) => res.json())
     .then((data) => {
       // Main Post
