@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JenniStamp</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <div class="logo">JENNIE STAMP</div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Popular</a>
+        <a href="#">Explore</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <nav class="mobile-menu-links">
+    <a href="#"><span class="label">Home</span><span class="plus">+</span></a>
+    <a href="#"><span class="label">Popolar</span><span class="plus">+</span></a>
+    <a href="#"><span class="label">Explore</span><span class="plus">+</span></a>
+    <a href="#"><span class="label">Contact</span><span class="plus">+</span></a>
+    <!-- <a href="#"><span class="label">Style</span><span class="plus">+</span></a> -->
+  </nav>
+
+  <!-- footer kept as before (if you have it) -->
+  <div class="mobile-menu-footer">
+    <hr>
+    <a class="footer-link" href="#">Email</a>
+    <!-- <a class="footer-link" href="#">Substack</a> -->
+
+    <!-- <div class="social-icons">
+      <a href="#">Fb</a>
+      <a href="#">Ig</a>
+      <a href="#">Pin</a>
+      <a href="#">Yt</a>
+    </div> -->
+
+    <div class="bottom-links">
+      <a href="#">Subscribe</a>
+      <!-- <a href="#">About</a>
+      <a href="#">Advertise</a> -->
+      <a href="#">Contact</a>
+    </div>  
+  </div>
+</div>
+
+<section class="blog-section">
+  <div class="blog-layout">
+      <div class="main-post" id="main-post" data-id="1"></div>
+      <div class="side-1" id="side-1" data-id="2"></div>
+      <div class="side-2" id="side-2" data-id="3"></div>
+      <div class="side-3" id="side-3" data-id="4"></div>
+  </div>
+</section>
+
+
+<!-- Rotating Carousel Section -->
+<section class="rotating-wrapper">
+  <div class="rotating-section">
+    <div class="rotating-track">
+      <div class="rotating-item black-bg">COFFEE, MORNINGS & NOTEBOOKS</div>
+      <div class="rotating-item pink-bg">HONEST THOUGHTS & CREATIVITY</div>
+      <div class="rotating-item light-bg">HELPING READERS GROW</div>
+      <div class="rotating-item gold-bg">HOME TO HONEST THOUGHTS & CREATIVE EXPERIMENTS</div>
+      <div class="rotating-item pink-bg">HELPING READERS FIND JOY IN WORDS</div>
+      <div class="rotating-item black-bg"> WORDS THAT INSPIRE</div>
+      <div class="rotating-item light-bg"> CREATIVITY EVERY DAY</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Featured Blogs v0 -->
+<section class="featured-blogs">
+    
+  <div class="featured-header">
+    <h2>Most Popular Blogs</h2>
+    <div class="nav-arrows">
+      <button class="arrow-btn" id="prevBtn">&#8592;</button>
+      <button class="arrow-btn" id="nextBtn">&#8594;</button>
+    </div>
+  </div>
+
+
+  <div class="featured-container" id="featuredContainer">
+    <!-- JS will insert featured items here -->
+  </div>
+</section>
+
+
+<!-- All Blogs Section -->
+<section class="all-blogs">
+  <div class="container">
+    <div class="all-blogs-header">
+      <h2>All Blogs</h2>
+      <div class="nav-arrows">
+        <button class="arrow-btn" id="allBlogsPrev">←</button>
+        <button class="arrow-btn" id="allBlogsNext">→</button>
+      </div>
+    </div>
+    
+    <div class="all-blogs-layout">
+      <!-- Main Featured Post -->
+      <div class="all-main-post" id="all-main-post">
+        <!-- Content will be loaded by JavaScript -->
+      </div>
+      
+      <!-- Trending Section -->
+      <div class="trending-section">
+    
+        <div class="trending-posts" id="trending-posts">
+          <!-- Trending posts will be loaded by JavaScript -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<section class="newsletter">
+  <div class="newsletter-container">
+    <div class="newsletter-text">
+      <h2>Subscribe to the Newsletter</h2>
+      <p>Join our community and get the best of the week, straight to your inbox.</p>
+    </div>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Email address" required>
+      <button type="submit">Subscribe</button>
+      <div class="circle">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 6l8 6 8-6M4 6v12h16V6" />
+        </svg>
+      </div>
+    </form>
+  </div>
+
+  <div class="newsletter-footer">
+    <p class="quote">"Every blog post is a doorway to new inspiration."</p>
+    <div class="footer-bottom">
+      <p>© 2025 All rights reserved.</p>
+      <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
