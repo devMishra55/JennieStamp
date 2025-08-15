@@ -21,7 +21,7 @@ const params = new URLSearchParams(window.location.search);
 const blogId = params.get("id");
 
 if (!blogId && window.location.pathname.includes("./index.html")) {
-  fetch(`${window.location.origin}/JennieStamp/blogs.json`)
+  fetch("./blogs.json")
     .then((res) => res.json())
     .then((data) => {
       // Main Post
